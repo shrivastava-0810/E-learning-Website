@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<div class="testimonial-area fix pt-100 pb-100 section-bg" data-background="{% static 'assets/img/gallery/section_bg03.png' %}">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-9 col-md-9">
+                <div class="h1-testimonial-active">
+                    <div class="single-testimonial pt-65">
+                        <div class="testimonial-caption text-center">
+                            <p>Inspire People Across The Globe</p>
+
+                        </div>
+                    </div>
+                    <div class="single-testimonial pt-65">
+                        <div class="testimonial-caption text-center">
+                            <p>Earn Money</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+                <br />
+                <div class='text-center'>
+                    <a href="{% url 'register' %}" class="btn btn-primary" role='button' data-animation="fadeInLeft" data-delay=".8s">Become a tutor</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
